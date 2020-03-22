@@ -8,7 +8,9 @@ After 36 hours of open pipeline, nearly 6 million tweets have been captured in t
 ## novel, unprecedented
 
 ![wordcloud](images/novel_unprecedented.png)
+March 22, 2020
 
 ## coronavirus, COVID-19
 
 ![wordcloud](images/images/coronavirus.png)
+March 20-22, 2020

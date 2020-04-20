@@ -7,8 +7,8 @@ After 48 hours of open pipeline, more than 10 million tweets were captured in th
 
 As of April 8, 2020: I've posted a Jupyter Notebook and corresponding code to show some of the initial exploratory data analysis. I'm keeping most analysis offline for the present but plan to post more of it as I get a working model going.
 
-# Word Cloud from April 20, 2020 from Tweets in the United States
-![wordcloud of USA](images/usa_wordcloud.jpg)
+# Word Cloud from April 20, 2020
+![wordcloud of USA](images/tweets420.jpg)
 
 # Word Clouds Made with First 500,000 Tweets
 

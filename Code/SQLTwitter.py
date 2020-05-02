@@ -70,28 +70,19 @@ class Streamlistener(tweepy.StreamListener):
 
             if 'text' in raw_data:
 
+                created_at = raw_data['created_at']
+                username = raw_data['user']['screen_name']
+                location = raw_data['user']['location']
+                followers_count = raw_data['user']['followers_count']
+                tweet_id = raw_data['id']
+
                 if 'extended_tweet' in raw_data:
-                    # gets extended text if possible instead of cutting off tweet
                     tweet = raw_data['extended_tweet']['full_text']
-                    created_at = raw_data['created_at']
-                    username = raw_data['user']['screen_name']
-                    location = raw_data['user']['location']
-                    followers_count = raw_data['user']['followers_count']
-                    tweet_id = raw_data['id']
-
-                    connect(created_at, username, tweet, location, followers_count, tweet_id)
-                    print("Tweet collected at: {} ".format(str(created_at)))
-
                 else:
-                    created_at = raw_data['created_at']
-                    username = raw_data['user']['screen_name']
                     tweet = raw_data['text']
-                    location = raw_data['user']['location']
-                    followers_count = raw_data['user']['followers_count']
-                    tweet_id = raw_data['id']
-               
-                    connect(created_at, username, tweet, location, followers_count, tweet_id)
-                    print("Tweet collected at: {} ".format(str(created_at)))
+
+                connect(created_at, username, tweet, location, followers_count, tweet_id)
+                print(f'Tweet collected at: {str(created_at)}')
 
         except Error as e:
             print(e)

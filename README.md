@@ -5,6 +5,3 @@ I've used Python to pipeline live tweets about COVID-19/Coronavirus into a MySQL
 
 # Start Here: 
 I've posted a ![Jupyter Notebook](https://github.com/LBBL96/Coronavirus-on-Twitter/blob/master/Code/Jupyter%20Notebooks/EDA%20for%20UK%20vs%20USA.ipynb) I created to show some of my initial exploratory data analysis. 
-
-# Word Cloud from April 20, 2020
-![wordcloud of USA](images/tweets420.jpg)

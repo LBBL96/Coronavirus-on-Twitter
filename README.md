@@ -3,23 +3,8 @@ My goal is to use supervised machine learning to determine if the contents of a 
 
 I've used Python to pipeline live tweets about COVID-19/Coronavirus into a MySQL database. It contains two tables: one capturing tweets featuring keywords "coronavirus" and "COVID-19", and the other capturing keywords "novel" and "unprecedented." Collected information includes username, tweet text, tweet location as reported by user, and date and time of tweet.
 
-After 48 hours of open pipeline, more than 10 million tweets were captured in the first category. After 36 hours, about 5.7 million tweets were captured in the second. I've closed the pipelines while I do exploratory analysis of the data. Once I have a preliminary working model, I plan to re-open the pipeline and analyze new data.
-
-As of April 8, 2020: I've posted a Jupyter Notebook and corresponding code to show some of the initial exploratory data analysis. I'm keeping most analysis offline for the present but plan to post more of it as I get a working model going.
+# Start Here: 
+I've posted a ![Jupyter Notebook](https://github.com/LBBL96/Coronavirus-on-Twitter/blob/master/Code/Jupyter%20Notebooks/EDA%20for%20UK%20vs%20USA.ipynb) I created to show some of my initial exploratory data analysis. 
 
 # Word Cloud from April 20, 2020
 ![wordcloud of USA](images/tweets420.jpg)
-
-# Word Clouds Made with First 500,000 Tweets
-
-## novel, unprecedented
-
-![wordcloud](images/novel_unprecedented.png)
-
-March 22, 2020
-
-## coronavirus, COVID-19
-
-![wordcloud](images/coronavirus.png)
-
-March 20-22, 2020
